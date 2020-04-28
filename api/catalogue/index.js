@@ -15,9 +15,7 @@
   });
 
   app.get("/catalogue*", function (req, res, next) {
-    setTimeout(() => {
-      helpers.simpleHttpRequest(endpoints.catalogueUrl + req.url.toString(), res, next);
-    }, global.acmws['request-latency-catalogue'] || 0)
+    helpers.simpleHttpRequest(endpoints.catalogueUrl + req.url.toString(), res, next);
   });
 
   app.get("/tags", function(req, res, next) {

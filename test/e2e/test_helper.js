@@ -10,7 +10,6 @@
 
   var count = 0;
 
-  /*
   ["cart", "item"].forEach(function(col) {
     client.connect(url, function(err, db) {
       if (err) return handleErr(err);
@@ -21,5 +20,5 @@
         db.close();
       });
     });
-  });*/
+  });
 }());
