@@ -76,12 +76,10 @@
    * });
    */
   helpers.simpleHttpRequest = function(url, res, next) {
-    setTimeout(() => {
-      request.get(url, function(error, response, body) {
-        if (error) return next(error);
-        helpers.respondSuccessBody(res, body);
-      }.bind({res: res}));
-    }, global.acmws['request-latency'] || 0);
+    request.get(url, function(error, response, body) {
+      if (error) return next(error);
+      helpers.respondSuccessBody(res, body);
+    }.bind({res: res}));
   }
 
   /* TODO: Add documentation */

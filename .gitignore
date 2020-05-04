@@ -1,13 +1,7 @@
-# Temp folder
-/tmp
-
 # Ignore npm installed packages
 /node_modules
-jmeter.log
 
-# Ignore coverage reports	
-/coverage	
+# Ignore coverage reports
+/coverage
+
 .idea
-
-# Credentials
-credentials.yml
